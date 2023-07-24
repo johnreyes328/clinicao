@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+/*inicio, navegador y footer*/
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 50px;
+    background-color: rgb(227, 236, 240);
+}
+
+.logo{
+    width: 300px;
+}
+
+.navegador{
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navegador ul{
+    display: flex;
+    gap: 40px;
+}
+
+.navegador ul li a{
+    color: #1275a6f5;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.carousel-item img{
+    max-width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.inicio{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 60px 50px;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.inicio p{
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.agendamiento{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.agenda-cita{
+    padding: 20px 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #1275a6f5;
+    border: none;
+}
+
+.agenda-cita a{
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+}
+
+.inicio-atencion{
+    width: 450PX;
+    height: 450px;
+    object-fit: cover;
+    border: 2px solid #5c93d6;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 48px;
+}
+
+.pie-de-pag{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 20px 50px;
+    background-color: #1275a6f5;
+    color: aliceblue;
+}
+
+.pie-de-pag-izq{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-clinica, .info-contacto{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.redes-sociales{
+    display: flex;
+    gap: 30px;
+}
+
+.redes-sociales a{
+    color: aliceblue;
+}
+
+.redes-sociales i{
+    font-size: 32px;
+}
+/*fin del inicio, navegador y footer*/
+
+.nosotros{
+    padding: 45px;
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.nosotros p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    gap: 50px;
+}
+
+.nosotros .carousel-item{
+    width: 600px;
+    height: 400px; 
+    border: none;
+    border-radius: 5px;
+}
+.nosotros .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+.n-especialidades{
+    gap: 30px;
+}
+
+.n-especialidades p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.especialidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+.especialidades div{
+    width: 270px;
+    border: 2px solid #5c93d6;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.especialidades h3{
+    text-align: center;
+}
+
+.img-quienes-somos{
+    width: 450PX;
+    height: 450px;
+    object-fit: cover;
+    border: 2px solid #5c93d6;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 100px;
+}
+
+.main h2{
+    text-align: center;
+    font-size: 48px;
+}
+
+.ortodoncia img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.ortodoncia h5{
+    font-size: 24px;
+    text-align: center;
+}
+
+.ortodoncia p{
+    font-size: 18px;
+    text-align:start;
+}
+
+.ortodoncia button{
+    background-color: #1275a6f5;
+    margin: 10px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.odontopediatria img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.odontopediatria h5{
+    font-size: 24px;
+    text-align: center;
+}
+
+.odontopediatria p{
+    font-size: 18px;
+    text-align:start;
+}
+
+.odontopediatria button{
+    background-color: #1275a6f5;
+    margin: 10px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.disfuncion-atm img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.disfuncion-atm h5{
+    font-size: 24px;
+    text-align: center;
+}
+
+.disfuncion-atm p{
+    font-size: 18px;
+    text-align:start;
+}
+
+.disfuncion-atm button{
+    background-color: #1275a6f5;
+    margin: 10px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+}
+/* Inicio pág. Contacto*/
+
+.form-contacto{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.contactanos h1{
+    text-align: center;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    column-gap: 30px;
+}
+
+.contacto p{
+    width: 350px;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+}
+.mapa{
+    width: 500px;
+    height: 500px;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-contacto{
+    border: 2px solid #5c93d6;
+    border-radius: 5px;
+}
+
+.botones-form{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contacto .boton-enviar{
+    background-color: #1275a6f5;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contacto .boton-reset{
+    background-color: #1275a6f5;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}

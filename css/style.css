@@ -4,10 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif, sans-serif;
 }
 
-/*inicio, navegador y footer*/
+/*inicio y navegador*/
 .encabezado{
     display: flex;
     justify-content: space-between;
@@ -54,7 +54,6 @@
 
 .inicio{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 30px;
     margin: 0 auto;
@@ -104,40 +103,30 @@
     border-radius: 5px;
     font-size: 48px;
 }
+/*footer*/
 
 .pie-de-pag{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    padding: 20px 50px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat( 2fr, 1fr);
     background-color: #1275a6f5;
     color: aliceblue;
 }
 
-.pie-de-pag-izq{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.info-clinica, .info-contacto{
-    font-size: 16px;
-    line-height: 24px;
+.pie-de-pag{
+   font-size: 25px; 
 }
 
 .redes-sociales{
-    display: flex;
-    gap: 30px;
-}
-
-.redes-sociales a{
+    font-size: 35px;
     color: aliceblue;
+    text-align: end;
 }
 
 .redes-sociales i{
-    font-size: 32px;
+    color: aliceblue;
 }
-/*fin del inicio, navegador y footer*/
+/*Quienes somos*/
 
 .nosotros{
     padding: 45px;
@@ -223,7 +212,7 @@
 
 .ortodoncia p{
     font-size: 18px;
-    text-align:start;
+    text-align: left;
 }
 
 .ortodoncia button{
@@ -285,11 +274,6 @@
 }
 /* Inicio pág. Contacto*/
 
-.form-contacto{
-    padding: 20px;
-    font-size: 18px;
-}
-
 .contactanos h1{
     text-align: center;
 }
@@ -317,10 +301,17 @@
 }
 
 .form-contacto{
-    border: 2px solid #5c93d6;
+    border: 3px solid #5c93d6;
     border-radius: 5px;
+    padding: 20px;
+    font-size: 18px;
 }
 
+.form-contacto input{
+    font-size: 15px;
+    width: auto;
+    border: #5c93d6;
+}
 .botones-form{
     display: flex;
     justify-content: space-evenly;

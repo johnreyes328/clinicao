@@ -17,9 +17,6 @@
     width: 300px;
 }
 
-.logo-chico{
-    display: none;
-}
 .navegador{
     background-size: cover;
     display: flex;
@@ -51,16 +48,10 @@
 }
 @media(max-width:768px){
     .logo{
-        display: none;
-    }
-    .logo-chico{
-        width: 70px;
-        display: block;
-        padding-top: 15px;
+        right: 15px;
     }
     .navegador .fa-bars{
         display: block;
-        padding-top: 5px;
         font-size: 45px;
         color: #5c93d6;
         order: -1;
@@ -304,7 +295,6 @@
         width: 420px;
     }
 }
-
 /*Estilos para nuestras especialidades*/
 .n-especialidades{
     text-align: center;

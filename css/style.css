@@ -9,11 +9,7 @@
 
 /*Estilos para el encabezado y el navegador*/
 .encabezado{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 100px;
-    padding: 0 50px;
     background-color: rgb(227, 236, 240);
 }
 
@@ -23,25 +19,23 @@
 
 .navegador{
     background-size: cover;
-    padding: 10px;
     display: flex;
     justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
 }
 
 .menu{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navegador ul{
+    list-style: none;
     display: flex;
     gap: 40px;
 }
 
 .navegador ul li a{
     color: #1275a6f5;
-    font-size: 18px;
+    display: block;
+    font-size: 20px;
     font-weight: 600;
     text-decoration: none;
 }
@@ -49,8 +43,54 @@
 .navegador ul li a:hover{
     color: white;
 }
-
+.navegador .fa-bars{
+    display: none;
+}
+@media(max-width:768px){
+    .logo{
+        right: 15px;
+    }
+    .navegador .fa-bars{
+        display: block;
+        font-size: 45px;
+        color: #5c93d6;
+        order: -1;
+    }
+    .navegador .fa-bars:hover + ul{
+        left: 0px;
+    }
+    .menu{
+        position: fixed;
+        width: 70vw;
+        height: 100%;
+        z-index: 3;
+        background-color: aliceblue;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        left: -80vw;
+        top: 0px; 
+        opacity: 90%;
+        transition: 0.8s;
+    }
+    .menu:hover{
+        left: 0px;
+    }
+    .agendamiento{
+        flex-direction: column;
+    }
+    .inicio-atencion{
+        order: -1;
+    }
+    .contacto{
+        flex-direction: column;
+    }
+    .mapa{
+        order: +2;
+    }
+}
 /*Estilos para el carrusel y el index*/
+
 .carousel-item img{
     width: 100%;
     height: 420px;
@@ -73,8 +113,8 @@
 
 .inicio p{
     text-align: center;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 1.4rem;
+    line-height: 30px;
 }
 
 .agendamiento{
@@ -136,6 +176,7 @@
 .pie-de-pag-izq{
     display: grid;
     grid-template-rows: auto;
+    font-size: 20px;
     gap: 10px;
     text-align: center;
 }
@@ -189,6 +230,7 @@
     }
 }
 .nosotros p{
+    font-size: 1.4rem;
     text-align: center;
     font-size: 1.25rem;
     line-height: 30px;
@@ -279,9 +321,9 @@
 
 .contacto p{
     width: 350px;
-    text-align: start;
-    font-size: 23px;
+    font-size: 1.4rem;
     line-height: 30px;
+    text-align: start;
 }
 .mapa{
     width: 500px;

@@ -1,0 +1,12 @@
+.botones-form{ /*Botones del formulario de contacto*/
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-evenly;
+    button{
+        color: aliceblue;
+        background-color: #1275a6f5;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+    }
+}

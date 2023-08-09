@@ -7,13 +7,9 @@
   font-family: "Playfair Display", serif, sans-serif;
 }
 
-/*Estilos para el encabezado y el navegador*/
-.encabezado {
+.navegador {
   height: 100px;
   background-color: rgb(227, 236, 240);
-}
-
-.navegador {
   background-size: cover;
   display: flex;
   justify-content: end;
@@ -21,42 +17,35 @@
   align-items: center;
   padding: 0 50px;
 }
-.navegador a img {
+.navegador a img { /*Logo*/
   width: 300px;
 }
-.navegador i {
+@media (max-width: 768px) {
+  .navegador a img {
+    right: 15px;
+  }
+}
+.navegador i { /*Menú hamburguesa*/
   display: none;
+}
+@media (max-width: 768px) {
+  .navegador i {
+    display: block;
+    font-size: 45px;
+    color: #5c93d6;
+    order: -1;
+  }
+  .navegador i:hover + ul {
+    left: 0px;
+  }
 }
 .navegador ul {
   list-style: none;
   display: flex;
   gap: 40px;
 }
-.navegador ul li a {
-  color: rgba(18, 117, 166, 0.9607843137);
-  display: block;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-}
-.navegador ul li a:hover {
-  color: white;
-}
-
 @media (max-width: 768px) {
-  .logo {
-    right: 15px;
-  }
-  .navegador .fa-bars {
-    display: block;
-    font-size: 45px;
-    color: #5c93d6;
-    order: -1;
-  }
-  .navegador .fa-bars:hover + ul {
-    left: 0px;
-  }
-  .menu {
+  .navegador ul {
     position: fixed;
     width: 70vw;
     height: 100%;
@@ -70,57 +59,76 @@
     opacity: 90%;
     transition: 0.8s;
   }
-  .menu:hover {
+  .navegador ul:hover {
     left: 0px;
-  }
-  .menu:hover {
-    left: 0px;
-  }
-  .agendamiento {
-    flex-direction: column;
-  }
-  .inicio-atencion {
-    order: -1;
-  }
-  .contacto {
-    flex-direction: column;
-  }
-  .mapa {
-    order: 2;
   }
 }
-/*Estilos para el carrusel y el index*/
-.carousel-item img {
+.navegador ul li a {
+  color: rgba(18, 117, 166, 0.9607843137);
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navegador ul li a:hover {
+  color: white;
+}
+
+.carousel-item img { /*Carrusel del index*/
   width: 100%;
   height: 420px;
   object-fit: cover;
 }
 
+.nosotros .carousel-item { /*Carrusel de la página quienes-somos*/
+  width: 600px;
+  height: 400px;
+}
+@media (max-width: 768px) {
+  .nosotros .carousel-item {
+    width: auto;
+  }
+}
+@media (max-width: 576px) {
+  .nosotros .carousel-item {
+    width: 420px;
+  }
+}
+.nosotros .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .inicio {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
   margin: 0 auto;
   padding: 50px;
 }
 .inicio h1 {
-  display: none;
+  text-align: center;
+  margin-bottom: 0px;
 }
 .inicio h2 {
   text-align: center;
 }
 .inicio p {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 20px;
   line-height: 30px;
+  margin-top: 15px;
 }
 
-.agendamiento {
+.agendamiento { /*Página de index*/
   display: flex;
   gap: 30px;
   justify-content: space-evenly;
   align-items: center;
   padding: 50px 0;
+}
+@media (max-width: 768px) {
+  .agendamiento {
+    flex-direction: column;
+  }
 }
 .agendamiento div {
   display: flex;
@@ -156,9 +164,13 @@
   padding: 10px;
   border-radius: 5px;
 }
+@media (max-width: 768px) {
+  .agendamiento img {
+    order: -1;
+  }
+}
 
-/* Estilos para el pie de página */
-.pie-de-pag {
+.pie-de-pag { /*Footer general*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: auto;
@@ -174,8 +186,7 @@
   }
 }
 
-/* Estilos para la información de la clínica y el contacto */
-.pie-de-pag-izq {
+.pie-de-pag-izq { /* Estilos para la información de la clínica y el contacto */
   display: grid;
   grid-template-rows: auto;
   font-size: 20px;
@@ -193,7 +204,6 @@
     align-items: center;
   }
 }
-
 .info-clinica img {
   width: 70px;
 }
@@ -206,8 +216,7 @@
   margin: 0;
 }
 
-/* Estilos para las redes sociales */
-.redes-sociales {
+.redes-sociales { /* Estilos para las redes sociales */
   display: flex;
   justify-content: end;
   align-items: end;
@@ -218,26 +227,26 @@
     align-items: center;
   }
 }
-
 .redes-sociales a {
   color: #fff;
   font-size: 35px;
   margin-right: 10px;
 }
 
-/*Estilos para quienes somos*/
+.quienes-somos { /*Estilos para quienes somos*/ }
 .quienes-somos h1 {
-  display: none;
-}
-.quienes-somos div {
+  padding-top: 35px;
+  margin: 0;
   text-align: center;
-  padding: 50px 50px 0px 50px;
 }
-.quienes-somos div p {
+.quienes-somos p {
+  text-align: center;
+  padding: 30px 50px 0px 50px;
+  margin: 0;
   font-size: 20px;
 }
 
-.nosotros {
+.nosotros { /*Información de quienes somos*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -251,9 +260,8 @@
   }
 }
 .nosotros p {
-  font-size: 1.4rem;
+  font-size: 20px;
   text-align: center;
-  font-size: 1.25rem;
   line-height: 30px;
   gap: 50px;
 }
@@ -263,45 +271,26 @@
   }
 }
 
-.nosotros .carousel-item {
-  width: 600px;
-  height: 400px;
-}
-@media (max-width: 768px) {
-  .nosotros .carousel-item {
-    width: auto;
-  }
-}
-@media (max-width: 576px) {
-  .nosotros .carousel-item {
-    width: 420px;
-  }
-}
-.nosotros .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/*Estilos para nuestras especialidades*/
-.n-especialidades {
+.n-especialidades { /*Estilo para encabezado de nuestras especialidades*/
   text-align: center;
-  padding: 50px;
+  padding: 40px 50px 35px 50px;
+}
+.n-especialidades h2 {
+  margin-bottom: 15px;
 }
 .n-especialidades P {
   font-size: 20px;
   line-height: 30px;
 }
 
-/*Estilos para las tarjetas de especialidades*/
-.especialidades {
+.especialidades { /*Estilos para las tarjetas de especialidades*/
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-around;
   padding: 1.8rem 1.8rem 3.5rem 1.8rem;
 }
-.especialidades div {
+.especialidades div { /*Estilos de las tarjetas*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -311,34 +300,31 @@
   padding: 10px;
   border-radius: 5px;
 }
-.especialidades h3 {
+.especialidades div h3 {
   text-align: center;
 }
-.especialidades p {
+.especialidades div p {
   font-size: 1.25rem;
   text-align: left;
 }
-.especialidades img {
+.especialidades div img {
   width: 100%;
   height: 200px;
   border-radius: 5px;
   object-fit: cover;
 }
 
-/*Estilos página de Contacto*/
-.contactanos {
+.contactanos { /*Encabezado de la página*/
   padding: 50px;
 }
 .contactanos h1 {
-  display: none;
-}
-.contactanos h2 {
   text-align: center;
 }
 .contactanos p {
   font-size: 20px;
 }
-.contactanos section {
+
+.contacto {
   display: flex;
   justify-content: space-evenly;
   width: auto;
@@ -346,7 +332,12 @@
   column-gap: 25px;
   padding: 20px 0px;
 }
-.contactanos section iframe {
+@media (max-width: 768px) {
+  .contacto {
+    flex-direction: column;
+  }
+}
+.contacto iframe { /*Mapa de ubicación de la clínica*/
   width: 600px;
   height: 550px;
   margin: 25px;
@@ -354,15 +345,19 @@
   border-radius: 5px;
 }
 @media (max-width: 768px) {
-  .contactanos section iframe {
+  .contacto iframe {
     width: 100%;
+    order: 2;
   }
 }
-.contactanos section p {
+.contacto p {
+  width: 550px;
   font-size: 20px;
   line-height: 30px;
 }
-.contactanos section form {
+
+.formulario { /*Formulario de página de contacto*/
+  width: 550px;
   height: 550px;
   display: flex;
   flex-direction: column;
@@ -373,22 +368,22 @@
   font-size: 18px;
 }
 @media (max-width: 768px) {
-  .contactanos section form {
+  .formulario {
     width: 100%;
   }
 }
-.contactanos section form div input {
+.formulario div input {
   font-size: 15px;
   width: 100%;
   border: solid #5c93d6 2px;
 }
-.contactanos section form textarea {
-  margin: 8px;
+.formulario textarea {
+  width: 100%;
   font-size: 15px;
   border: solid #5c93d6 1px;
 }
 
-.botones-form {
+.botones-form { /*Botones del formulario de contacto*/
   display: flex;
   padding-top: 15px;
   justify-content: space-evenly;

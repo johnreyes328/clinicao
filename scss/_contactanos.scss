@@ -1,0 +1,36 @@
+.contactanos{ /*Encabezado de la página*/
+    padding: 50px;
+    h1{
+        text-align: center;
+    }
+    p{
+        font-size: 20px; 
+    }
+}
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    align-items: center;
+    column-gap: 25px;
+    padding: 20px 0px;
+    @media(max-width:768px){
+        flex-direction: column;
+    }
+    iframe{ /*Mapa de ubicación de la clínica*/
+        width: 600px;
+        height: 550px;
+        margin: 25px;
+        padding: 10px;
+        border-radius: 5px;
+        @media (max-width: 768px) {
+            width: 100%;
+            order: +2;
+        }
+    }
+    p{
+        width: 550px;
+        font-size: 20px;
+        line-height: 30px;   
+    }
+}

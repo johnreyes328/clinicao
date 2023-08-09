@@ -1,0 +1,24 @@
+.formulario{ /*Formulario de página de contacto*/
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 3px solid #5c93d6;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 18px;
+    @media (max-width: 768px) {               
+        width: 100%;
+    }
+    div input{
+        font-size: 15px;
+        width: 100%;
+        border: solid #5c93d6 2px;
+    }
+    textarea{
+        width: 100%;
+        font-size: 15px;
+        border: solid #5c93d6 1px;
+    }
+}

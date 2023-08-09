@@ -1,0 +1,21 @@
+.carousel-item img{ /*Carrusel del index*/
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.nosotros .carousel-item{ /*Carrusel de la página quienes-somos*/
+    width: 600px;
+    height: 400px; 
+    @media (max-width: 768px) {
+        width: auto;
+    }
+    @media (max-width: 576px) {
+        width: 420px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  
+    }
+}

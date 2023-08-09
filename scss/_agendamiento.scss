@@ -1,0 +1,48 @@
+.agendamiento{ /*Página de index*/
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+    @media(max-width:768px){
+            flex-direction: column;
+        }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button{
+            width: 320px;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1275a6f5;
+            &:hover{
+                background-color: rgb(227, 236, 240);
+                border: solid #1275a6f5;
+            }
+            a{
+                font-size: 20px;
+                font-weight: 700;
+                color: aliceblue;
+                text-align: center;
+                text-decoration: none; 
+                &:hover{
+                    color: #1275a6f5;
+                }
+            }
+        }
+    }
+    img{
+        width: 450PX;
+        height: 450px;
+        object-fit: cover;
+        border: 2px solid #5c93d6;
+        padding: 10px;
+        border-radius: 5px;
+        @media(max-width:768px){
+            order: -1;
+
+        }
+    }
+}

@@ -233,14 +233,14 @@
   margin-right: 10px;
 }
 
-.quienes-somos { /*Estilos para quienes somos*/ }
+.quienes-somos { /*Estilos para quienes somos*/
+  text-align: center;
+}
 .quienes-somos h1 {
   padding-top: 35px;
   margin: 0;
-  text-align: center;
 }
 .quienes-somos p {
-  text-align: center;
   padding: 30px 50px 0px 50px;
   margin: 0;
   font-size: 20px;
@@ -314,7 +314,7 @@
   object-fit: cover;
 }
 
-.contactanos { /*Encabezado de la página*/
+.contactanos { /*Encabezado de la página de contacto*/
   padding: 50px;
 }
 .contactanos h1 {

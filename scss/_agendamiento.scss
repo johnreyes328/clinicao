@@ -16,19 +16,19 @@
             padding: 20px 50px;
             border: none;
             border-radius: 5px;
-            background-color: #1275a6f5;
+            background-color: $color-principal;
             &:hover{
-                background-color: rgb(227, 236, 240);
-                border: solid #1275a6f5;
+                background-color: $color-secundario;
+                border: solid $color-principal;
             }
             a{
                 font-size: 20px;
                 font-weight: 700;
-                color: aliceblue;
+                color: $color-secundario;
                 text-align: center;
                 text-decoration: none; 
                 &:hover{
-                    color: #1275a6f5;
+                    color: $color-principal;
                 }
             }
         }
@@ -37,7 +37,7 @@
         width: 450PX;
         height: 450px;
         object-fit: cover;
-        border: 2px solid #5c93d6;
+        border: 2px soli$color-principal;
         padding: 10px;
         border-radius: 5px;
         @media(max-width:768px){

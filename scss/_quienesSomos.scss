@@ -3,7 +3,8 @@
     h1{
         padding-top: 35px;
         margin: 0;
-    }
+        color: $color-principal;
+        }
     p{
         padding: 30px 50px 0px 50px;
         margin: 0;
@@ -23,7 +24,7 @@
         }
     p{
         font-size: 20px;
-        text-align: center;
+        text-align: justify;
         line-height: 30px;
         gap: 50px;
         @media (max-width: 768px) {   

@@ -3,8 +3,8 @@
     grid-template-columns: repeat(2, 1fr);
     width: auto;
     gap: 20px;
-    background-color: #1275a6f5;
-    color: aliceblue;
+    background-color: $color-principal;
+    color: $color-secundario;
     padding: 20px;
     @media (max-width: 768px){      
         grid-template-columns: 1fr;
@@ -49,7 +49,7 @@
         align-items: center;
     }
     a{
-        color: #fff;
+        color: $color-secundario;
         font-size: 35px;
         margin-right: 10px;
     }

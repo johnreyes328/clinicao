@@ -2,6 +2,7 @@
     text-align: center;
     padding: 40px 50px 35px 50px;
     h2{
+        color: $color-principal;
         margin-bottom: 15px;
     }
     P{
@@ -22,14 +23,14 @@
         align-items: center;
         text-align: center;
         width: 21.87rem;
-        border: 2px solid #5c93d6;
+        border: 2px solid $color-principal;
         padding: 10px;
         border-radius: 5px;   
         h3{
             text-align: center;
         }
         p{
-            font-size: 1.25rem;
+            font-size: 20px;
             text-align: left;
         }
         img{

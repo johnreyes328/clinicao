@@ -1,6 +1,6 @@
 .navegador{
     height: 100px;
-    background-color: rgb(227, 236, 240);
+    background-color: $color-secundario;
     background-size: cover;
     display: flex;
     justify-content: end;
@@ -18,7 +18,7 @@
         @media(max-width:768px){ 
             display: block;
             font-size: 45px;
-            color: #5c93d6;
+            color: $color-principal;
             order: -1;
             &:hover + ul{
                 left: 0px; 
@@ -34,7 +34,7 @@
             width: 70vw;
             height: 100%;
             z-index: 3;
-            background-color: aliceblue;
+            background-color: $color-secundario;
             flex-direction: column;
             align-items: center;
             padding-top: 50px;
@@ -47,13 +47,13 @@
             }
         }    
         li a{
-            color: #1275a6f5;
+            color: $color-principal;
             display: block;
             font-size: 20px;
             font-weight: 600;
             text-decoration: none;
             &:hover{
-                color: white
+                color: white;
             }
         }
     }

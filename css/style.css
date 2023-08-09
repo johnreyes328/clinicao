@@ -32,7 +32,7 @@
   .navegador i {
     display: block;
     font-size: 45px;
-    color: #5c93d6;
+    color: rgba(18, 117, 166, 0.9607843137);
     order: -1;
   }
   .navegador i:hover + ul {
@@ -50,7 +50,7 @@
     width: 70vw;
     height: 100%;
     z-index: 3;
-    background-color: aliceblue;
+    background-color: rgb(227, 236, 240);
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
@@ -76,7 +76,7 @@
 
 .carousel-item img { /*Carrusel del index*/
   width: 100%;
-  height: 420px;
+  height: 450px;
   object-fit: cover;
 }
 
@@ -107,9 +107,11 @@
 .inicio h1 {
   text-align: center;
   margin-bottom: 0px;
+  color: rgba(18, 117, 166, 0.9607843137);
 }
 .inicio h2 {
   text-align: center;
+  color: rgba(18, 117, 166, 0.9607843137);
 }
 .inicio p {
   text-align: center;
@@ -149,7 +151,7 @@
 .agendamiento div button a {
   font-size: 20px;
   font-weight: 700;
-  color: aliceblue;
+  color: rgb(227, 236, 240);
   text-align: center;
   text-decoration: none;
 }
@@ -160,7 +162,7 @@
   width: 450PX;
   height: 450px;
   object-fit: cover;
-  border: 2px solid #5c93d6;
+  border: 2px soli rgba(18, 117, 166, 0.9607843137);
   padding: 10px;
   border-radius: 5px;
 }
@@ -176,7 +178,7 @@
   width: auto;
   gap: 20px;
   background-color: rgba(18, 117, 166, 0.9607843137);
-  color: aliceblue;
+  color: rgb(227, 236, 240);
   padding: 20px;
 }
 @media (max-width: 768px) {
@@ -228,7 +230,7 @@
   }
 }
 .redes-sociales a {
-  color: #fff;
+  color: rgb(227, 236, 240);
   font-size: 35px;
   margin-right: 10px;
 }
@@ -239,6 +241,7 @@
 .quienes-somos h1 {
   padding-top: 35px;
   margin: 0;
+  color: rgba(18, 117, 166, 0.9607843137);
 }
 .quienes-somos p {
   padding: 30px 50px 0px 50px;
@@ -261,7 +264,7 @@
 }
 .nosotros p {
   font-size: 20px;
-  text-align: center;
+  text-align: justify;
   line-height: 30px;
   gap: 50px;
 }
@@ -276,6 +279,7 @@
   padding: 40px 50px 35px 50px;
 }
 .n-especialidades h2 {
+  color: rgba(18, 117, 166, 0.9607843137);
   margin-bottom: 15px;
 }
 .n-especialidades P {
@@ -296,7 +300,7 @@
   align-items: center;
   text-align: center;
   width: 21.87rem;
-  border: 2px solid #5c93d6;
+  border: 2px solid rgba(18, 117, 166, 0.9607843137);
   padding: 10px;
   border-radius: 5px;
 }
@@ -304,7 +308,7 @@
   text-align: center;
 }
 .especialidades div p {
-  font-size: 1.25rem;
+  font-size: 20px;
   text-align: left;
 }
 .especialidades div img {
@@ -314,11 +318,12 @@
   object-fit: cover;
 }
 
-.contactanos { /*Encabezado de la página de contacto*/
+.contactanos { /*Encabezado de la página de contáctanos*/
   padding: 50px;
 }
 .contactanos h1 {
   text-align: center;
+  color: rgba(18, 117, 166, 0.9607843137);
 }
 .contactanos p {
   font-size: 20px;
@@ -362,7 +367,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  border: 3px solid #5c93d6;
+  border: solid rgba(18, 117, 166, 0.9607843137) 3px;
   border-radius: 5px;
   padding: 20px;
   font-size: 18px;
@@ -375,12 +380,12 @@
 .formulario div input {
   font-size: 15px;
   width: 100%;
-  border: solid #5c93d6 2px;
+  border: solid rgba(18, 117, 166, 0.9607843137) 2px;
 }
 .formulario textarea {
   width: 100%;
   font-size: 15px;
-  border: solid #5c93d6 1px;
+  border: solid rgba(18, 117, 166, 0.9607843137) 2px;
 }
 
 .botones-form { /*Botones del formulario de contacto*/
@@ -389,7 +394,7 @@
   justify-content: space-evenly;
 }
 .botones-form button {
-  color: aliceblue;
+  color: rgb(227, 236, 240);
   background-color: rgba(18, 117, 166, 0.9607843137);
   padding: 8px;
   border: none;

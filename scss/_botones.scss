@@ -1,3 +1,26 @@
+.agenda-cita{ /*Botón de agendamiento de cita en Index*/
+    width: 320px;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: $color-principal;
+    transition: 1.7s;
+    &:hover{
+        background-color: $color-secundario;
+        border: solid $color-principal;
+    }
+    a{
+        font-size: 20px;
+        font-weight: 700;
+        color: $color-secundario;
+        text-align: center;
+        text-decoration: none; 
+        &:hover{
+            color: $color-principal;
+        }
+    }
+}
+
 .botones-form{ /*Botones del formulario de contacto*/
     display: flex;
     padding-top: 15px;

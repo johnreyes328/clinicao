@@ -46,14 +46,16 @@
 }
 @media (max-width: 768px) {
   .navegador ul {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     width: 70vw;
     height: 100%;
     z-index: 3;
     background-color: rgb(227, 236, 240);
-    flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    justify-items: center;
+    padding-top: 30vh;
     left: -80vw;
     top: 0px;
     opacity: 90%;
@@ -66,7 +68,7 @@
 .navegador ul li a {
   color: rgba(18, 117, 166, 0.9607843137);
   display: block;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -137,26 +139,8 @@
   flex-direction: column;
   align-items: center;
 }
-.agendamiento div button {
-  width: 320px;
-  padding: 20px 50px;
-  border: none;
-  border-radius: 5px;
-  background-color: rgba(18, 117, 166, 0.9607843137);
-}
-.agendamiento div button:hover {
-  background-color: rgb(227, 236, 240);
-  border: solid rgba(18, 117, 166, 0.9607843137);
-}
-.agendamiento div button a {
+.agendamiento div p {
   font-size: 20px;
-  font-weight: 700;
-  color: rgb(227, 236, 240);
-  text-align: center;
-  text-decoration: none;
-}
-.agendamiento div button a:hover {
-  color: rgba(18, 117, 166, 0.9607843137);
 }
 .agendamiento img {
   width: 450PX;
@@ -165,6 +149,9 @@
   border: 2px soli rgba(18, 117, 166, 0.9607843137);
   padding: 10px;
   border-radius: 5px;
+  box-shadow: 8px 9px 19px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 8px 9px 19px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 9px 19px -1px rgba(0, 0, 0, 0.75);
 }
 @media (max-width: 768px) {
   .agendamiento img {
@@ -193,6 +180,9 @@
   grid-template-rows: auto;
   font-size: 20px;
   gap: 10px;
+}
+.pie-de-pag-izq p {
+  margin: 0;
 }
 
 .info-clinica {
@@ -233,6 +223,13 @@
   color: rgb(227, 236, 240);
   font-size: 35px;
   margin-right: 10px;
+}
+
+.derechos {
+  text-align: center;
+  margin: 0;
+  background-color: rgba(18, 117, 166, 0.9607843137);
+  color: rgb(227, 236, 240);
 }
 
 .quienes-somos { /*Estilos para quienes somos*/
@@ -294,27 +291,28 @@
   justify-content: space-around;
   padding: 1.8rem 1.8rem 3.5rem 1.8rem;
 }
+.especialidades:hover > :not(:hover) {
+  opacity: 0.2;
+}
 .especialidades div { /*Estilos de las tarjetas*/
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 21.87rem;
-  border: 2px solid rgba(18, 117, 166, 0.9607843137);
-  padding: 10px;
-  border-radius: 5px;
+  border: 1px solid rgba(18, 117, 166, 0.9607843137);
+  border-radius: 10px;
+  box-shadow: 8px 9px 19px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 8px 9px 19px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 9px 19px -1px rgba(0, 0, 0, 0.75);
 }
-.especialidades div h3 {
-  text-align: center;
-}
-.especialidades div p {
-  font-size: 20px;
-  text-align: left;
+.especialidades div:hover {
+  transform: scale(1.1);
 }
 .especialidades div img {
   width: 100%;
-  height: 200px;
-  border-radius: 5px;
+  height: 100%;
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -334,6 +332,7 @@
   justify-content: space-evenly;
   width: auto;
   align-items: center;
+  gap: 20px;
   column-gap: 25px;
   padding: 20px 0px;
 }
@@ -342,21 +341,45 @@
     flex-direction: column;
   }
 }
-.contacto iframe { /*Mapa de ubicación de la clínica*/
-  width: 600px;
+.contacto .mapa { /*Mapa de ubicación de la clínica*/
+  display: flex;
+  flex-direction: column;
+  width: 500px;
   height: 550px;
-  margin: 25px;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 15px;
+  border: 2px solid rgba(18, 117, 166, 0.9607843137);
+  border-radius: 10px;
+  border-top-left-radius: 95px;
+  border-bottom-left-radius: 95px;
+  background-color: rgb(227, 236, 240);
 }
 @media (max-width: 768px) {
-  .contacto iframe {
+  .contacto .mapa {
     width: 100%;
     order: 2;
   }
 }
+.contacto .mapa iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+  border-top-left-radius: 70px;
+}
+.contacto .mapa .infoMapa {
+  width: 100%;
+  padding: 10px 20px;
+}
+.contacto .mapa h4 {
+  font-size: 20px;
+}
+.contacto .mapa i {
+  font-size: 22px;
+}
+.contacto .mapa p {
+  font-size: 18px;
+}
 .contacto p {
-  width: 550px;
+  width: 100%;
   font-size: 20px;
   line-height: 30px;
 }
@@ -367,8 +390,11 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  border: solid rgba(18, 117, 166, 0.9607843137) 3px;
-  border-radius: 5px;
+  border: solid rgba(18, 117, 166, 0.9607843137) 2px;
+  border-radius: 10px;
+  border-top-right-radius: 95px;
+  border-bottom-right-radius: 95px;
+  background-color: rgb(227, 236, 240);
   padding: 20px;
   font-size: 18px;
 }
@@ -386,6 +412,29 @@
   width: 100%;
   font-size: 15px;
   border: solid rgba(18, 117, 166, 0.9607843137) 2px;
+}
+
+.agenda-cita { /*Botón de agendamiento de cita en Index*/
+  width: 320px;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(18, 117, 166, 0.9607843137);
+  transition: 1.7s;
+}
+.agenda-cita:hover {
+  background-color: rgb(227, 236, 240);
+  border: solid rgba(18, 117, 166, 0.9607843137);
+}
+.agenda-cita a {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(227, 236, 240);
+  text-align: center;
+  text-decoration: none;
+}
+.agenda-cita a:hover {
+  color: rgba(18, 117, 166, 0.9607843137);
 }
 
 .botones-form { /*Botones del formulario de contacto*/

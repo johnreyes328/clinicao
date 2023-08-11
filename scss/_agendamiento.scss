@@ -5,34 +5,16 @@
     align-items: center;
     padding: 50px 0;
     @media(max-width:768px){
-            flex-direction: column;
-        }
+        flex-direction: column;
+    }
     div{
         display: flex;
         flex-direction: column;
         align-items: center;
-        button{
-            width: 320px;
-            padding: 20px 50px;
-            border: none;
-            border-radius: 5px;
-            background-color: $color-principal;
-            &:hover{
-                background-color: $color-secundario;
-                border: solid $color-principal;
-            }
-            a{
+            p{
                 font-size: 20px;
-                font-weight: 700;
-                color: $color-secundario;
-                text-align: center;
-                text-decoration: none; 
-                &:hover{
-                    color: $color-principal;
-                }
             }
         }
-    }
     img{
         width: 450PX;
         height: 450px;
@@ -40,6 +22,9 @@
         border: 2px soli$color-principal;
         padding: 10px;
         border-radius: 5px;
+        box-shadow: 8px 9px 19px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 8px 9px 19px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 8px 9px 19px -1px rgba(0,0,0,0.75);
         @media(max-width:768px){
             order: -1;
 

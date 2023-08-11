@@ -4,8 +4,11 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border: solid $color-principal 3px;
-    border-radius: 5px;
+    border: solid $color-principal 2px;
+    border-radius: 10px;
+    border-top-right-radius: 95px;
+    border-bottom-right-radius: 95px;
+    background-color: $color-secundario;
     padding: 20px;
     font-size: 18px;
     @media (max-width: 768px) {               

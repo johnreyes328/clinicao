@@ -46,16 +46,21 @@
             transition: 0.8s;
             &:hover{
                 left: 0px;
+
             }
         }    
         li a{
             color: $color-principal;
             display: block;
-            font-size: 30px;
-            font-weight: 600;
+            font-size: 20px;
+            font-weight: 600; /*pendiente*/
             text-decoration: none;
             &:hover{
                 color: white;
+                transform: translateY(-23%);
+            }
+            @media(max-width:768px){
+                font-size: 30px;
             }
         }
     }

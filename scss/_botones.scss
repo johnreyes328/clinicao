@@ -1,22 +1,18 @@
-.agenda-cita{ /*Botón de agendamiento de cita en Index*/
-    width: 320px;
-    padding: 20px 50px;
-    border: none;
-    border-radius: 5px;
-    background-color: $color-principal;
-    transition: 1.7s;
-    &:hover{
-        background-color: $color-secundario;
-        border: solid $color-principal;
-    }
+.agendamiento{ /*Botón de agendamiento de cita en Index*/   
     a{
+        width: 320px;
+        padding: 10px 0;
         font-size: 20px;
         font-weight: 700;
         color: $color-secundario;
+        border-radius: 10px;
+        background-color: $color-principal;
         text-align: center;
         text-decoration: none; 
         &:hover{
             color: $color-principal;
+            background-color: $color-secundario;
+            border: solid $color-principal;
         }
     }
 }

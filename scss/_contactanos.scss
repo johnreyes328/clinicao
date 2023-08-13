@@ -19,7 +19,7 @@
     @media(max-width:768px){
         flex-direction: column;
     }
-    .mapa{ /*Mapa de ubicación de la clínica*/
+    .mapa{ /*Contenedor del mapa de ubicación de la clínica*/
         display: flex;
         flex-direction: column;
         width: 500px;
@@ -55,7 +55,7 @@
         }
     }
     p{
-        width: 100%;
+        width: 550px;
         font-size: 20px;
         line-height: 30px;   
     }

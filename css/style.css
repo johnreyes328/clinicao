@@ -68,12 +68,18 @@
 .navegador ul li a {
   color: rgba(18, 117, 166, 0.9607843137);
   display: block;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 600; /*pendiente*/
   text-decoration: none;
 }
 .navegador ul li a:hover {
   color: white;
+  transform: translateY(-23%);
+}
+@media (max-width: 768px) {
+  .navegador ul li a {
+    font-size: 30px;
+  }
 }
 
 .carousel-item img { /*Carrusel del index*/
@@ -184,6 +190,9 @@
 .pie-de-pag-izq p {
   margin: 0;
 }
+.pie-de-pag-izq i {
+  font-size: 25px;
+}
 
 .info-clinica {
   display: flex;
@@ -292,6 +301,7 @@
   padding: 1.8rem 1.8rem 3.5rem 1.8rem;
 }
 .especialidades:hover > :not(:hover) {
+  color: aquamarine;
   opacity: 0.2;
 }
 .especialidades div { /*Estilos de las tarjetas*/
@@ -341,7 +351,7 @@
     flex-direction: column;
   }
 }
-.contacto .mapa { /*Mapa de ubicación de la clínica*/
+.contacto .mapa { /*Contenedor del mapa de ubicación de la clínica*/
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -379,7 +389,7 @@
   font-size: 18px;
 }
 .contacto p {
-  width: 100%;
+  width: 550px;
   font-size: 20px;
   line-height: 30px;
 }
@@ -403,38 +413,28 @@
     width: 100%;
   }
 }
-.formulario div input {
+.formulario div input, .formulario textarea {
   font-size: 15px;
   width: 100%;
-  border: solid rgba(18, 117, 166, 0.9607843137) 2px;
-}
-.formulario textarea {
-  width: 100%;
-  font-size: 15px;
   border: solid rgba(18, 117, 166, 0.9607843137) 2px;
 }
 
-.agenda-cita { /*Botón de agendamiento de cita en Index*/
+.agendamiento { /*Botón de agendamiento de cita en Index*/ }
+.agendamiento a {
   width: 320px;
-  padding: 20px 50px;
-  border: none;
-  border-radius: 5px;
-  background-color: rgba(18, 117, 166, 0.9607843137);
-  transition: 1.7s;
-}
-.agenda-cita:hover {
-  background-color: rgb(227, 236, 240);
-  border: solid rgba(18, 117, 166, 0.9607843137);
-}
-.agenda-cita a {
+  padding: 10px 0;
   font-size: 20px;
   font-weight: 700;
   color: rgb(227, 236, 240);
+  border-radius: 10px;
+  background-color: rgba(18, 117, 166, 0.9607843137);
   text-align: center;
   text-decoration: none;
 }
-.agenda-cita a:hover {
+.agendamiento a:hover {
   color: rgba(18, 117, 166, 0.9607843137);
+  background-color: rgb(227, 236, 240);
+  border: solid rgba(18, 117, 166, 0.9607843137);
 }
 
 .botones-form { /*Botones del formulario de contacto*/

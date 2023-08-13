@@ -1,4 +1,4 @@
-.agendamiento{ /*Botón de agendamiento de cita en Index*/   
+.agendamiento{ /*No es un botoón, pero cumple la función del mismo. Se ubica en agendamiento del Index*/   
     a{
         width: 320px;
         padding: 10px 0;
@@ -21,7 +21,7 @@
     display: flex;
     padding-top: 15px;
     justify-content: space-evenly;
-    button{
+    .botonEnviar, .botonReset{
         color: $color-secundario;
         background-color: $color-principal;
         padding: 8px;

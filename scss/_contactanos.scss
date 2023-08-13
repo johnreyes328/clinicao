@@ -1,5 +1,9 @@
 .contactanos{ /*Encabezado de la página de contáctanos*/
     padding: 50px;
+    @media(max-width:768px){
+        padding: 30px;
+        text-align: center;
+    }
     h1{
         text-align: center;
         color: $color-principal;
@@ -17,6 +21,7 @@
     column-gap: 25px;
     padding: 20px 0px;
     @media(max-width:768px){
+        width: 100%;
         flex-direction: column;
     }
     .mapa{ /*Contenedor del mapa de ubicación de la clínica*/
@@ -57,6 +62,9 @@
     p{
         width: 550px;
         font-size: 20px;
-        line-height: 30px;   
+        line-height: 30px; 
+        @media(max-width:768px){
+            width: 100%;
+        }  
     }
 }

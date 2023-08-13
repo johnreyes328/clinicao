@@ -1,6 +1,9 @@
 .inicio{
     margin: 0 auto;
     padding: 50px;
+    @media(max-width:768px){
+        padding: 30px;
+    }
     h1{
         text-align: center;
         margin-bottom: 0px;

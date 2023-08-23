@@ -442,8 +442,7 @@
   border: solid rgba(18, 117, 166, 0.9607843137) 2px;
 }
 
-.agendamiento { /*No es un botoón, pero cumple la función del mismo. Se ubica en agendamiento del Index*/ }
-.agendamiento a {
+.agendamiento a { /*No es un botón, pero cumple la función del mismo. Se ubica en agendamiento del Index*/
   width: 320px;
   padding: 10px 0;
   font-size: 20px;

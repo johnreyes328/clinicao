@@ -312,8 +312,7 @@
   padding: 1.8rem 1.8rem 3.5rem 1.8rem;
 }
 .especialidades:hover > :not(:hover) {
-  color: aquamarine;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 .especialidades div { /*Estilos de las tarjetas*/
   display: flex;
